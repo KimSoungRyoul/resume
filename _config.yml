@@ -1,7 +1,7 @@
 # Site settings
 title: KSR Resume
 description: KimSoungRyoul's CV
-favicon: /assets/img/avatar.png
+favicon: /resume/assets/img/avatar.png
 baseurl: https://kimsoungryoul.github.io/resume
 url: https://kimsoungryoul.github.io/resume
 rss_url: /pages/atom.xml
