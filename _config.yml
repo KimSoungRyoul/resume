@@ -14,15 +14,15 @@ exclude: [vendor]
 
 # Author settings
 author:
-  name: Dong Liang
-  title: Java Developer
-  address: Auckland, New Zealand
-  email: dongg.liang#gmail.com
-  link: http://ddbullfrog.com
+  name: 김성렬 (SoungRyoul Kim)
+  title: Python(Java) Backend Developer
+  address: Seoul
+  email: KimSoungRyoul@gmail.com
+  link: https://medium.com/@soungryoul.kim
   weibo:
-  github: ddbullfrog
-  linkedin: ddbullfrog
-  twitter: ddbullfrog
+  github: https://github.com/KimSoungRyoul-Portfolio
+  linkedin: https://www.linkedin.com/in/soungryoul-kim-558a14156/
+  twitter: #
   gavatar: /resumecard/assets/img/avatar.JPG
   stackoverflow:
 #  stackoverflow: 4582127
