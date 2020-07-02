@@ -1,7 +1,7 @@
 # Site settings
 title: KSR Resume
 description: KimSoungRyoul's CV
-favicon: /assets/img/avatar.JPG
+favicon: /assets/img/avatar.png
 baseurl: https://ddbullfrog.github.io/resumecard
 url: https://ddbullfrog.github.io/resumecard
 rss_url: /pages/atom.xml
@@ -23,7 +23,7 @@ author:
   github: https://github.com/KimSoungRyoul-Portfolio
   linkedin: https://www.linkedin.com/in/soungryoul-kim-558a14156/
   twitter:
-  gavatar: /resumecard/assets/img/avatar.JPG
+  gavatar: /resumecard/assets/img/avatar.png
   stackoverflow:
 #  stackoverflow: 4582127
   workHistory:
