@@ -1,9 +1,9 @@
 # Site settings
 title: KSR Resume
 description: KimSoungRyoul's CV
-favicon: /resume/assets/img/avatar.png
-baseurl: https://kimsoungryoul.github.io/resume
-url: https://kimsoungryoul.github.io/resume
+favicon: /assets/img/avatar.png
+baseurl: /resume
+url: https://kimsoungryoul.github.io
 rss_url: /pages/atom.xml
 google_analytics: UA-63653234-1
 
@@ -25,7 +25,7 @@ author:
   medium: '@soungryoul.kim'
   gavatar: /resume/assets/img/avatar.png
   stackoverflow:
-#  stackoverflow: 4582127
+  #  stackoverflow: 4582127
   workHistory:
     - work1:
       company: XXX Ltd
@@ -70,14 +70,19 @@ author:
     - language1:
       name: Python
       frameworkList:
-       - framework: Django
-       - framework: DjangoRestFramework
+        - framework:
+          name: Django
+        - framework:
+          name: DjangoRestFramework
     - language2:
       name: Java
       frameworkList:
-        - framework: Spring
+        - framework1:
+          name: Spring
     - language3:
       name: Docker K8s
       frameworkList:
-        - framework: ECS
-        - framework: ECR
+        - framework1:
+          name: ECS
+        - framework2:
+          name: ECR
