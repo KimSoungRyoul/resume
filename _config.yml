@@ -2,8 +2,8 @@
 title: KSR Resume
 description: KimSoungRyoul's CV
 favicon: /assets/img/avatar.png
-baseurl: https://kimsoungryoul.github.io/resume/
-url: https://kimsoungryoul.github.io/resume/
+baseurl: https://kimsoungryoul.github.io/resume
+url: https://kimsoungryoul.github.io/resume
 rss_url: /pages/atom.xml
 google_analytics: UA-63653234-1
 
