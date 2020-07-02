@@ -59,14 +59,14 @@ author:
       description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
   languages:
     - language1:
-      name: Chinese
-      proficiency: Native
+      name: Python
+      proficiency: Django
     - language2:
-      name: English
-      proficiency: Professional
+      name: Java
+      proficiency: Spring
     - language3:
-      name: Japanese
-      proficiency: Limit
+      name: Docker K8s
+      proficiency: ECR ECS
   programmingSkills:
     - skill1:
       name: HTML
