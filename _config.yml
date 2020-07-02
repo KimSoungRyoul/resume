@@ -2,8 +2,8 @@
 title: KSR Resume
 description: KimSoungRyoul's CV
 favicon: /assets/img/avatar.png
-baseurl: https://ddbullfrog.github.io/resumecard
-url: https://ddbullfrog.github.io/resumecard
+baseurl: https://kimsoungryoul.github.io/resume/
+url: https://kimsoungryoul.github.io/resume/
 rss_url: /pages/atom.xml
 google_analytics: UA-63653234-1
 
@@ -69,11 +69,15 @@ author:
   languages:
     - language1:
       name: Python
-      proficiency1: Django
-      proficiency2: DjangoRestFramework
+      frameworkList:
+       - framework: Django
+       - framework: DjangoRestFramework
     - language2:
       name: Java
-      proficiency: Spring
+      frameworkList:
+        - framework: Spring
     - language3:
       name: Docker K8s
-      proficiency: ECR ECS
+      frameworkList:
+        - framework: ECS
+        - framework: ECR
