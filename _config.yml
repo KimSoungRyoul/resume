@@ -60,7 +60,6 @@ author:
   studyHistory:
     - study1:
       organization: 오픈소스pytest
-
       degree: Bachelor
       major: Software Engineering
       started: 2005
@@ -70,7 +69,8 @@ author:
   languages:
     - language1:
       name: Python
-      proficiency: Django
+      proficiency1: Django
+      proficiency2: DjangoRestFramework
     - language2:
       name: Java
       proficiency: Spring
