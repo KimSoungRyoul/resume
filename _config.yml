@@ -1,7 +1,7 @@
 # Site settings
 title: KSR Resume
 description: KimSoungRyoul's CV
-favicon: /assets/img/avatar.png
+favicon: /assets/img/favicon.png
 baseurl: /resume
 url: https://kimsoungryoul.github.io
 rss_url: /pages/atom.xml
@@ -83,6 +83,5 @@ author:
       name: Docker K8s
       frameworkList:
         - framework1:
-          name: ECS
-        - framework2:
-          name: ECR
+          name: AWS
+
