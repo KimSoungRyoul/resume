@@ -5,133 +5,359 @@ layout: default
     <div class="row-fluid">
         <div class="col-md-8">
             {% if site.author.workHistory %}
-                <h3 class="title with-icon"><span class="glyphicon glyphicon-plane cat-title"></span>Work History</h3>
-                <ul class="timeline">
-                    {% for work in site.author.workHistory %}
-                        <li class="timeline-inverted">
-                            {% if work.started %}
-                                <div class="timeline-badge info">{{ work.started }}</div>
-                            {% endif %}
-                            <div class="timeline-panel grid-block">
-                                <div class="timeline-heading">
-                                    {% if work.company %}
-                                        <h4 class="timeline-title">{{ work.company }} </h4>
-                                    {% endif %}
-                                    <p>
-                                        <small class="text-muted">
-                                            {% if work.title %}
-                                                {{ work.title }}
-                                            {% endif %}
-                                        </small>
-                                    </p>
-                                    <p>
-                                        <small class="text-muted">
-                                            {% if work.duration %}
-                                                <i class="fa fa-calendar"></i> {{ work.duration }} |
-                                            {% endif %}
-                                            {% if work.location %}
-                                                <i class="fa fa-map-marker"></i>  {{ work.location }}
-                                            {% endif %}
-                                        </small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    {% if work.description %}
-                                        <p>{{ work.description }}</p>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            {% if site.author.educationHistory %}
-                <h3 class="title with-icon"><span class="fa fa-book cat-title"></span>Education History</h3>
-                <ul class="timeline">
-                    {% for education in site.author.educationHistory %}
-                        <li class="timeline-inverted">
-                            {% if education.started %}
-                                <div class="timeline-badge info">{{ education.started }}</div>
-                            {% endif %}
-                            <div class="timeline-panel grid-block">
-                                <div class="timeline-heading">
-                                    {% if education.organization %}
-                                        <h4 class="timeline-title">{{ education.organization }}</h4>
-                                    {% endif %}
-                                    <p>
-                                        <small class="text-muted">
-                                            {% if education.degree %}
-                                                {{ education.degree }}
-                                            {% endif %}
-                                            {% if education.major %}
-                                                , {{ education.major }}
-                                            {% endif %}
-                                        </small>
-                                    </p>
-                                    <p>
-                                        <small class="text-muted">
-                                            {% if education.duration %}
-                                                <i class="fa fa-calendar"></i> {{ education.duration }} |
-                                            {% endif %}
-                                            {% if education.location %}
-                                                <i class="fa fa-map-marker"></i>  {{ education.location }}
-                                            {% endif %}
-                                        </small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    {% if education.description %}
-                                        <p>{{ education.description }}</p>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
+            <h3 class="title with-icon"><span class="glyphicon glyphicon-plane cat-title"></span>Work History</h3>
+            <ul class="timeline">
+                <!--                {% for work in site.author.workHistory %}-->
+                <!--                <li class="timeline-inverted">-->
+                <!--                    {% if work.started %}-->
+                <!--                    <div class="timeline-badge info">{{ work.started }}</div>-->
+                <!--                    {% endif %}-->
+                <!--                    <div class="timeline-panel grid-block">-->
+                <!--                        <div class="timeline-heading">-->
+                <!--                            {% if work.company %}-->
+                <!--                            <h4 class="timeline-title">{{ work.company }} </h4>-->
+                <!--                            {% endif %}-->
+                <!--                            <p>-->
+                <!--                                <small class="text-muted">-->
+                <!--                                    {% if work.title %}-->
+                <!--                                    {{ work.title }}-->
+                <!--                                    {% endif %}-->
+                <!--                                </small>-->
+                <!--                            </p>-->
+                <!--                            <p>-->
+                <!--                                <small class="text-muted">-->
+                <!--                                    {% if work.duration %}-->
+                <!--                                    <i class="fa fa-calendar"></i> {{ work.duration }} |-->
+                <!--                                    {% endif %}-->
+                <!--                                    {% if work.location %}-->
+                <!--                                    <i class="fa fa-map-marker"></i> {{ work.location }}-->
+                <!--                                    {% endif %}-->
+                <!--                                </small>-->
+                <!--                            </p>-->
+                <!--                        </div>-->
+                <!--                        <div class="timeline-body">-->
+                <!--                            {% if work.description %}-->
+                <!--                            <p>{{ work.description }}</p>-->
+                <!--                            {% endif %}-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </li>-->
+                <!--                {% endfor %}-->
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info">2020</div>
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Vendor(공급자) 관리 서비스 개발</h4>
+                            <p>
+                                <small class="text-muted">DeliveryHero Korea (Yogiyo)</small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+                                    <i class="fa fa-calendar"></i> (2019.08~현재)
+                                    <i class="fa fa-map-marker"></i> Seoul
+                                </small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>신규 프로젝트 : ERD 설계 API Docs, pytest, DjangoRestFramework, 공급업체 관리를 위한 전사시스템, JWT </p>
+                            <br/>
+                            <p>* 직원 권한 관리 시스템 설계: 각 직군에 따라 전사시스템에 접근가능한 기능들이 다름, 이를 제어하기위한 시스템, UI조회권한, API생성,수정,삭제 권한을
+                                관리자UI에서 커스텀제어가 가능하게 하는 시스템</p>
+                            <br/>
+                            <p>* 공급업체 관리 시스템 설계: 공급업체를 관리하기 위한 복잡한 Entity관계 설계 API 개발 도메인설계, REST API, REST할 수없는 설계에 대한 딜레마</p>
+                            <br/>
+                            <p>* 업무 관리 시스템 설계 : 일종의 Mini Jira 공급업체를 입점시키는 과정에 발생하는 업무들(영업,계약,입점,주문전달방식...)관리, 조직장은 해당 시스템을 통해 업무를 관리,행
+                                조직원들은 해당 시스템을 통해 업무를 수행 가능한 시스템 개발</p>
+                            <br/>
+
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info">2019</div>
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Vendor(공급자) 서비스 Maintenance Squad</h4>
+                            <p>
+                                <small class="text-muted">DeliveryHero Korea (Yogiyo)</small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+                                    <i class="fa fa-calendar"></i> (2019.06~2019.12)
+                                    <i class="fa fa-map-marker"></i> Seoul
+                                </small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>공급자 관련 서비스 버그개선, 추가 기능 반영 BatchJob SQL, DataSync 기획 관여, 설계에 대한 의사결정, FCM</p>
+                            <br/>
+                            <p>* 요기요 플러스 공급업체 데이터 Sync : 데이터Sync Batch Job, 검색Sync </p>
+                            <p>* 사장님 NPS(설문조사) </p>
+                            <p>* 사장님 리뷰 댓글 연동 </p>
+                            <p>* 사장님 주문 내역 조회 : 트레픽 관련 성능 이슈</p>
+                            <br/>
+                            <p>관련 키워드: Django, SQL, BatchJob, DataSync</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info">2019</div>
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">PlatformOps Maintenance Squad </h4>
+                            <p>
+                                <small class="text-muted">DeliveryHero Korea (Yogiyo)</small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+                                    <i class="fa fa-calendar"></i> (2019.01~2019.06)
+                                    <i class="fa fa-map-marker"></i> Seoul
+                                </small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>자잘한 버그 수정, 요기요 기존시스템 유지보수 업무, 원인 분석,파악 완료되서 할당되는 단순 개선 업무들... </p>
+                            <br/>
+                            <p>
+                                * ORM 쿼리(셋) 개선 : N+1 문제, 캐싱 (Query, Property Caching) <br/>
+                                * 페이징 처리 : API 개선 <br/>
+                                * Transaction 이슈 : row Lock, Optimistic Lock, TransactionManagementError <br/>
+                                * DB Index 마이그레이션 보조 & SlaveDB: 의사결정은 DevOps팀에서 되서 내려옴 코드작업만 해줌 <br/>
+                            </p>
+                            <br/>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
             {% endif %}
 
-           {% if site.author.studyHistory %}
+
+            {% if site.author.educationHistory %}
+            <h3 class="title with-icon"><span class="fa fa-book cat-title"></span>Education History</h3>
+            <ul class="timeline">
+                {% for education in site.author.educationHistory %}
+                <li class="timeline-inverted">
+                    {% if education.started %}
+                    <div class="timeline-badge info">{{ education.started }}</div>
+                    {% endif %}
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            {% if education.organization %}
+                            <h4 class="timeline-title">{{ education.organization }}</h4>
+                            {% endif %}
+                            <p>
+                                <small class="text-muted">
+                                    {% if education.degree %}
+                                    {{ education.degree }}
+                                    {% endif %}
+                                    {% if education.major %}
+                                    , {{ education.major }}
+                                    {% endif %}
+                                </small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+                                    {% if education.duration %}
+                                    <i class="fa fa-calendar"></i> {{ education.duration }} |
+                                    {% endif %}
+                                    {% if education.location %}
+                                    <i class="fa fa-map-marker"></i> {{ education.location }}
+                                    {% endif %}
+                                </small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            {% if education.description %}
+                            <p>{{ education.description }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if site.author.studyHistory %}
             <h3 class="title with-icon"><span class="fa fa-book cat-title"></span>개인 활동 History</h3>
             <ul class="timeline">
                 {% for study in site.author.studyHistory %}
-                    <li class="timeline-inverted">
-                        {% if study.started %}
-                            <div class="timeline-badge info">{{ study.started }}</div>
-                        {% endif %}
-                        <div class="timeline-panel grid-block">
-                            <div class="timeline-heading">
-                                {% if study.organization %}
-                                    <h4 class="timeline-title">{{ study.organization }}</h4>
-                                {% endif %}
-                                <p>
-                                    <small class="text-muted">
-                                        {% if study.degree %}
-                                            {{ study.degree }}
-                                        {% endif %}
-                                        {% if study.major %}
-                                            , {{ study.major }}
-                                        {% endif %}
-                                    </small>
-                                </p>
-                                <p>
-                                    <small class="text-muted">
-                                        {% if education.duration %}
-                                            <i class="fa fa-calendar"></i> {{ study.duration }} |
-                                        {% endif %}
+                <li class="timeline-inverted">
+                    <!--                    {% if study.started %}-->
+                    <!--                    <div class="timeline-badge info">{{ study.started }}</div>-->
+                    <!--                    {% endif %}-->
+                    <!--                    <div class="timeline-panel grid-block">-->
+                    <!--                        <div class="timeline-heading">-->
+                    <!--                            {% if study.organization %}-->
+                    <!--                            <h4 class="timeline-title">{{ study.organization }}</h4>-->
+                    <!--                            {% endif %}-->
+                    <!--                            <p>-->
+                    <!--                                <small class="text-muted">-->
+                    <!--                                    {% if study.degree %}-->
+                    <!--                                    {{ study.degree }}-->
+                    <!--                                    {% endif %}-->
+                    <!--                                    {% if study.major %}-->
+                    <!--                                    , {{ study.major }}-->
+                    <!--                                    {% endif %}-->
+                    <!--                                </small>-->
+                    <!--                            </p>-->
+                    <!--                            <p>-->
+                    <!--                                <small class="text-muted">-->
+                    <!--                                    {% if education.duration %}-->
+                    <!--                                    <i class="fa fa-calendar"></i> {{ study.duration }} |-->
+                    <!--                                    {% endif %}-->
 
-                                    </small>
-                                </p>
-                            </div>
-                            <div class="timeline-body">
-                                {% if study.description %}
-                                    <p>{{ study.description }}</p>
-                                {% endif %}
-                            </div>
+                    <!--                                </small>-->
+                    <!--                            </p>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="timeline-body">-->
+                    <!--                            {% if study.description %}-->
+                    <!--                            <p>{{ study.description }}</p>-->
+                    <!--                            {% endif %}-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!--                </li>-->
+                    <!--                {% endfor %}-->
+
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info">2020</div>
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">django-mysql (OpenSource Contribution)</h4>
+                            <p>
+                                <small class="text-muted">
+                                    <a href="https://django-mysql.readthedocs.io/en/latest/" target="_blank">https://django-mysql.readthedocs.io/en/latest/</a>
+                                </small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+                                    <i class="fa fa-calendar"></i>2020.06~
+                                </small>
+                            </p>
                         </div>
-                    </li>
-                {% endfor %}
+                        <div class="timeline-body">
+                            <p>참고: <a href="https://github.com/adamchainz/django-mysql/issues/671" target="_blank">내가 Open한 Issue(https://github.com/adamchainz/django-mysql/issues/671)</a> <br/><br/>
+                                이거는 최근에 작업중인 PullRequest, <strong>Django QuerySet중 Model.objects.filter().update(field1="blabla")</strong> 수행시 modified_at(수정날짜)가 갱신이 안되는데 Mysql UPDATE SQL 수행시 날짜를 알아서
+                                갱신해주는 옵션을 줄 수 있다.<br/>
+                                Django는 이 옵션 제공안해주고 버전 릴리즈 주기가 길어서(6개월) new Feature의 경우 머지되더라도 마이너버전업 할때는 배포 안해줌... <br/>
+                                Django-Mysql에 mysql자체에서 제공하는 "수정날짜 자동갱신 옵션"(on update current_timestamp)을 줄 수 있게하는 기능을 추가하려고 작업중... <br/><br/>
+                                대체로 오픈소스 팀들은 NewFeature를 제안하는 경우 매우 엄격하다는 것을 느낌 새로운 기능은 새로운 버그를 가져오기때문인 듯
+                            </p>
+                            <br/>
+                            * <a href="https://github.com/adamchainz/django-mysql/pull/674" target="_blank">https://github.com/adamchainz/django-mysql/pull/674</a>
+                            <strong>(Open) </strong>
+                            <br/>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info">2020</div>
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">django (OpenSource Contribution)</h4>
+                            <p>
+                                <small class="text-muted">
+                                    <a href="https://django-mysql.readthedocs.io/en/latest/" target="_blank">https://django-mysql.readthedocs.io/en/latest/</a>
+                                </small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+                                    <i class="fa fa-calendar"></i>2020.03~
+                                </small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                이거는 릴리즈 주기 놓쳐서 손놓고있는 PullRequest, 8월 안쪽에 작업하면 될거같은데 여유가 안난다... <strong>SQL comment 문법이 있는데 Django에서 사용할 필요가 있어서 작업함</strong><br/>
+                                * 테스트케이스 추가 (미작업) <br/>
+                                * 문서작업 (미작업) <br/>
+                            </p>
+
+                            <br/>
+                            * <a href="https://github.com/django/django/pull/12605" target="_blank">https://github.com/django/django/pull/12605</a> <strong>(Open) </strong>
+                            <br/>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info">2019</div>
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">pytest-tipsi-django (OpenSource Contribution)</h4>
+                            <p>
+                                <small class="text-muted">
+                                    <a href="https://pypi.org/project/pytest-tipsi-django/" target="_blank">https://pypi.org/project/pytest-tipsi-django/</a>
+                                </small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+
+                                    <i class="fa fa-calendar"></i> 2019.10
+                                </small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>pytest Django Transaction Manager Library : django pytest 수행시 더미데이터를 매번 testcase마다 INSERT rollback 하는 작업을 반복함.
+                                Spring에서 @BeforeClass와 같이 testcase 마다 transaction을 제어해서 더미데이터 재사용함 <br/>
+                                하지만 pytest-django는 testcase간 transaction Managing기능이 없음 pytest-tipsi-django는 이를 지원해주는 라이브러리,<br/>
+                                신규프로젝트(Vendor 관리 서비스 개발)에서 해당 라이브러리를 도입해서 사용중이였는데 버그를 발견해서 이를 수정함,<br/> <br/>
+                                두번째 PullRequest는 라이브러리 자체가 불안정한건지 몇몇 상황에서 transaction save_point를 찾지못하는 이슈가 발생함 이를 개선하기위해
+                                반드시 transaction 구간을 설정해주도록 작업하자고 제안했는데 Organizer가 거절함
+                            </p>
+                            <br/>
+                            * <a href="https://github.com/tipsi/pytest-tipsi-django/pull/9" target="_blank">https://github.com/tipsi/pytest-tipsi-django/pull/9</a>
+                            <strong>(Merged) </strong>
+                            <br/>
+                            * <a href="https://github.com/tipsi/pytest-tipsi-django/pull/10" target="_blank">https://github.com/tipsi/pytest-tipsi-django/pull/10</a>
+                            <strong>(Closed) </strong>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info">2018</div>
+                    <div class="timeline-panel grid-block">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mybatis 암복호화 Plugin 모듈 (Toy Project)</h4>
+                            <p>
+                                <small class="text-muted">
+                                    <a href="https://github.com/Ice-Caramel-Macchiato/mybatis-extensions" target="_blank">https://github.com/Ice-Caramel-Macchiato/mybatis-extensions</a>
+                                </small>
+                            </p>
+                            <p>
+                                <small class="text-muted">
+
+                                    <i class="fa fa-calendar"></i> 2018.12
+                                </small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p> Mybatis 암복호화 Plugin 기능
+                                @Encryption(type=CrytogramType.(SHA256,AES256 중 택1)) 애노테이션을 붙이면 해당 프로퍼티는 Mybatis를 사용해서 INSERT UPDATE 수행시 암복호화가 알아서 수행됨 <br/>
+                                Mybatis 팀은 New Feature는 받지 않는다고 거절함 (아래 PullRequest 참고)
+                            </p>
+                            <br/>
+                            * <a href="https://github.com/mybatis/mybatis-3/pull/1429" target="_blank">https://github.com/mybatis/mybatis-3/pull/1429</a>
+                            <strong>(Closed) </strong>
+                            <br/>
+
+                        </div>
+                    </div>
+                </li>
+
+
             </ul>
-        {% endif %}
+            {% endif %}
         </div>
         <div class="col-md-4">
             {% if site.author.languages %}
